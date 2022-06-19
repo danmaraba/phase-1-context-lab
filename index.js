@@ -30,10 +30,10 @@ let createEmployeeRecords = function(employeeDetails) {
 }
 
 
-function createTimeInEvent(dateStamp) {
+function createTimeInEvent(aDateStamp) {
     let timeInEvent = {
         type: 'TimeIn',
-        hour: Number(dateStamp.slice(11, 15)),
+        hour: Number(aDateStamp.slice(11, 15)),
         date: dateStamp.slice(0, 10)
     }
      this.timeInEvents.push(timeInEvent);
